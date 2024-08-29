@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "gilroy";
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    width: 100%;
+    height: 100vh;
+    /* background-color:rgba(0, 0, 0, 0.945); */
+}
+
+#back {
+    width: 100%;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.993);
+}
+
+/* BACK  */
+
+#back {
+    width: 100%;
+    height: 162vh;
+}
+
+#back img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* TOP */
+
+#top {
+    /*  pointer events se top par na touch hokar peeche touch hoga */
+    /* video time stempt 44:20 */
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    /* background-color: #000000b2; */
+}
+
+#workingarea {
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    height: 100vh;
+    max-width: 1920px;
+    /* border: 1px solid red; */
+}
+
+#nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 40px 0;
+}
+
+#nav img {
+    height: 60px;
+
+}
+
+#nleft,
+#nright {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+nav {}
+
+#nav a {
+    pointer-events: all;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 12px;
+    font-weight: 700;
+    color: white;
+    /* font-family: "gilroy"; */
+}
+
+#hero {
+    position: absolute;
+    top: 80%;
+    /*UPDATED  50%*/
+    transform: translate(-0%, -50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* height: 100px; */
+    /* background-color: red; */
+}
+
+#hero-left {
+    min-width: 50%;
+    /* height: 100px; */
+    /* background-color: yellow; */
+}
+
+#hero-left .elem h1:nth-child(1) {
+    top: 0;
+}
+
+#hero-left .elem h1 {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    line-height: .9;
+    font-family: "kajiro";
+    color: rgb(255, 255, 255);
+    font-weight: 100;
+    font-size: 11vw;
+}
+
+#hero-left .elem {
+    position: relative;
+    height: 9vw;
+    overflow: hidden;
+    /* background-color: red; */
+}
+
+#hero-left button {
+    pointer-events: all;
+    padding: 0.4vw 3vw;
+    font-size: 3vw;
+    margin-top: 3vw;
+    font-family: "kajiro";
+}
+
+
+/* HERO Right */
+
+#hero-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 17%;
+    color: #fff;
+    /* background-color:green;  */
+}
+
+#hero-right p {
+    font-size: 14px;
+    font-weight: 300;
+    text-align: right;
+}
+
+#hero-right #imagediv {
+    width: 100%;
+    height: 170px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background-image: url(https://images.unsplash.com/photo-1568782517100-09bf22d88c2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80);
+    background-size: cover;
+    background-position: center;
+}
+
+#hero-right p:nth-child(3) {
+    /*selecting second para*/
+
+    margin-bottom: 100px;
+}
